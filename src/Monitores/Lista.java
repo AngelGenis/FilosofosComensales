@@ -27,8 +27,11 @@ class Mesa {
 	int contador = 0;
 	
 	public Mesa() {
-		for (int i = 1; i <= 5; i++)
+		int i=0;
+		while(i<5) {
 			estados.add("Pensando");
+			i++;
+		}		
 	}
 
 	public synchronized void probarBocado(int i) {

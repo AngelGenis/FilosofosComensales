@@ -5,8 +5,8 @@ public class Main {
 		Filosofo filosofos[] = new Filosofo[5];
 		Mesa b = new Mesa();
 		
-		int i=1;
-		while(i<=5) {
+		int i=0;
+		while(i<5) {
 			filosofos[i] = new Filosofo(b, i);
 			i++;
 		}

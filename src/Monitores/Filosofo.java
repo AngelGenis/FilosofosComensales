@@ -13,13 +13,14 @@ public class Filosofo extends Thread{
 
 	public void run() {
 		while (true) {
-			System.out.println("Filosofo: " + i + " esta pensando");
+			int n = i+1;
+			System.out.println("Filosofo: " + n + " esta pensando");
 			x.tomarTenedores(i);
 			Util.mySleep(1000);
-			System.out.println("Filosofo: " + i + " esta comiendo con tenedor: " + i + " y tenedor: " + ((i + 1) % 5));
+			System.out.println("Filosofo: " + n + " esta comiendo con tenedor: " + n + " y tenedor: " + ((n + 1) % 5));
 			Util.mySleep(1000);
 			x.bajarTenedores(i);
-			System.out.println("Filosofo: " + i + " esta bajando el tenedor " + i + " y el tenedor: " + ((i + 1) % 5));
+			System.out.println("Filosofo: " + n + " esta bajando el tenedor " + n + " y el tenedor: " + ((n + 1) % 5));
 		}
 	}
 	
